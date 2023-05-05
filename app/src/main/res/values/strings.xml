@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Pocket Manager</string>
+    <string name="home">Home</string>
+    <string name="addFriend">Add Friend</string>
+    <string name="addGroup">Add Group</string>
+    <string name="emailText">Enter Email of New Friend </string>
+    <string name="stats">Stats</string>
+    <string name="New">New</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="tags">
+        <item>Dining</item>
+        <item>LifeStyle</item>
+        <item>Bills</item>
+        <item>Others</item>
+    </string-array>
+    <string name="title_activity_transition_history_activty">Transition_History_Activty</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="split_expense_with_friends">Split Expense With Friends</string>
+    <string name="the_total_requested_money">Total Requested Money - 0.0</string>
+    <string name="the_total_owed_money">Total Owed Money - 0.0</string>
+</resources>

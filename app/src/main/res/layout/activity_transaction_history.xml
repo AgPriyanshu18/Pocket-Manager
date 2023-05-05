@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".activity.TransitionHistoryActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="@drawable/gradient"
+        android:layout_height="55dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:contentDescription="Go Back" />
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:layout_marginStart="20sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="History"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tl_parent"
+        android:background="@drawable/gradient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ti_ll"
+            android:tag="all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_home_24"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ti_dining"
+            android:tag="Dining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_dining_24"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ti_lifestyle"
+            android:tag="Bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_baseline_emoji_nature_24"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ti_ill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_baseline_attach_money_24"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/ti_misc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_baseline_panorama_fish_eye_24"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_trans_history"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:id="@+id/friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Split With Friends"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/purple_200"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="10dp"
+            android:background="@color/purple_200"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pro Tips"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/purple_200"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tap on Friends Name After Entering Amount"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textColor="@color/purple_200"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_friendsSplitMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/splitCancelBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Cancel"
+                android:textSize="20sp"
+                android:background="@drawable/gradient"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:layout_weight="0.4"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.05"/>
+            <TextView
+                android:id="@+id/splitDoneBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Split"
+                android:layout_margin="10dp"
+                android:textSize="20sp"
+                android:background="@drawable/gradient"
+                android:gravity="center"
+                android:layout_weight="0.4"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,5 +1,5 @@
 
-# Expense Tracker
+# Pocket Manager
 
 Pocket Manager is an android application built using Kotlin and Firebase that allows users to split expenses among friends.
 
